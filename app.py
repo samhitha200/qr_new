@@ -3,12 +3,12 @@ import numpy as np
 import cv2
 from PIL import Image
 from joblib import load
-from feature_extractor import extract_white_area_features
+from feature_extractor_new import extract_white_area_features
 from io import BytesIO
 import base64
 
 # Load model
-model = load("rf_white_features.pkl")
+model = load("rf_white_features_new.pkl")
 
 # Page config
 st.set_page_config(page_title="QR Code Authenticity Validator", layout="wide")
